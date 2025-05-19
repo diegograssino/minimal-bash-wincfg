@@ -2,6 +2,10 @@
 
 #Some aliases
 alias gstatus='git status -sb'
+alias gstash='git stash'
+alias gpop='git stash pop'
+alias gcheckout='git checkout $2'
+alias gcheckoutb='git checkout -b $2'
 alias gadd='git add --all'
 alias gcommit='git commit -m $2'
 alias gpush='git push'
