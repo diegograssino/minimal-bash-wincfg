@@ -46,13 +46,14 @@ then
     fi
 fi
 
+PS1="$PS1"'\n'
 PS1="$PS1"'\[\033[32m\]'
 PS1="$PS1"'➜ '
 PS1="$PS1"'\[\033[0m\]'
 
 MSYS2_PS1="$PS1"
 
-export GIT_PS1_SHOWSTASHSTATE=true
-export GIT_PS1_SHOWDIRTYSTATE=true
-export GIT_PS1_SHOWUNTRACKEDFILES=true
+export GIT_PS1_SHOWSTASHSTATE=false
+export GIT_PS1_SHOWDIRTYSTATE=false
+export GIT_PS1_SHOWUNTRACKEDFILES=false
 export GIT_PS1_SHOWUPSTREAM="auto"
