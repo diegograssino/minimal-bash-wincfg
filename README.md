@@ -79,12 +79,15 @@ To use this configuration, follow the steps below:
    cd ~
    ```
 
-2. **Check for existing configuration files (e.g., .bashrc, .minttyrc, .inputrc). If these files exist, ensure you're comfortable replacing them before proceeding.**:
+2. **Check for existing configuration files (e.g., .bashrc, .minttyrc, .inputrc), check too if you already has a .git hidden folder. If these files exist, ensure you're comfortable replacing them before proceeding.**:
 
 3. **Clone the repository on your user folder**:
 
    ```bash
-   git clone https://github.com/diegograssino/minimal-bash-wincfg.git .
+   git init
+   git remote add https://github.com/diegograssino/minimal-bash-wincfg.git
+   git pull origin main
+   git checkout main
    ```
 
 4. **Restart your terminal (Windows Terminal, Mintty, or Git Bash) to apply the changes.**:
