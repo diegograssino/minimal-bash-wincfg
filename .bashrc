@@ -1,13 +1,15 @@
-#Custom config
+#Find this windows bash config on: https://github.com/diegograssino/minimal-bash-wincfg
 
-#My aliases
-alias gs='git status -sb'
-alias gaa='git add --all'
-alias gc='git commit -m $2'
-alias gp='git push'
-alias gpo='git push origin'
-alias gpl='git pull'
-alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+#Some aliases
+alias gstatus='git status -sb'
+alias gadd='git add --all'
+alias gcommit='git commit -m $2'
+alias gpush='git push'
+alias gpusho='git push origin $2'
+alias gpull='git pull'
+alias gpullo='git pull origin $2'
+alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gundo='git reset --soft HEAD~1'
 
 alias ls='ls -F --color=auto --show-control-chars'
 alias ll='ls -l'
